@@ -203,11 +203,16 @@ function lancerJeu() {
       // Obtenez une proposition aléatoire.
       afficherProposition(getRandomElement(listeProposition));
       startCountdown();
-
-      // Et on modifie l'affichage en direct.
-      //afficherProposition(listeProposition[i]);
     });
   }
+
+  // Gestion de l'événement submit sur le formulaire de partage.
+  let form = document.querySelector("form");
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    let scoreEmail = `${score} / ${i}`;
+    gererFormulaire(scoreEmail);
+  });
 
   afficherResultat(score, i);
 }
