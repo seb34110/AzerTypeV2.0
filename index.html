@@ -50,6 +50,31 @@
         <h4>Compte à rebours</h4>
         <div id="countdownDisplay">60s</div>
       </div>
+
+      <!-- Fenêtre contextuelle (popup) -->
+      <div class="popupBackground" id="popupBackground">
+        <div class="popup" id="popup">
+          <h2>Partager votre score</h2>
+          <form id="scoreForm">
+            <label for="nomUtilisateur">Nom d'utilisateur :</label>
+            <input
+              type="text"
+              id="nomUtilisateur"
+              name="nomUtilisateur"
+              required
+            />
+            <label for="scoreUtilisateur">Score :</label>
+            <input
+              type="text"
+              id="scoreUtilisateur"
+              name="scoreUtilisateur"
+              readonly
+            />
+            <button type="submit">Partager</button>
+          </form>
+          <button id="btnFermerPopup">Fermer</button>
+        </div>
+      </div>
     </main>
 
     <footer>
