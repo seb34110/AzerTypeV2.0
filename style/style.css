@@ -13,7 +13,7 @@
 
 body {
   --color-primary: #0509ec;
-  --color-secondary: #070301;
+  --color-secondary: #000000;
   --color-tertiary: #ffeee6;
 }
 
@@ -37,6 +37,13 @@ h3 {
   font-size: 17px;
   font-weight: 500;
   color: var(--color-secondary);
+}
+
+h4 {
+  margin: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--color-tertiary);
 }
 
 /* Mise en forme des formulaires */
