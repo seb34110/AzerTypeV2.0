@@ -206,7 +206,6 @@ function lancerJeu() {
     });
   }
   // Gestion de l'événement submit sur le formulaire de partage.
-  // Gestion de l'événement submit sur le formulaire de partage.
   let form = document.querySelector("form");
   form.addEventListener("submit", (event) => {
     event.preventDefault();
